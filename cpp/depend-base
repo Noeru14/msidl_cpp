@@ -1,0 +1,9 @@
+Base.o: Base.cpp Base.h
+Film.o: Film.cpp Film.h Video.h Base.h
+Main.o: Main.cpp Photo.h Base.h Video.h Film.h Groupe.h XMaps.h \
+ TCPServer.h Socket.h
+Groupe.o: Groupe.cpp Groupe.h Base.h Photo.h Video.h Film.h
+XMaps.o: XMaps.cpp XMaps.h Base.h Photo.h Video.h Groupe.h Film.h \
+ TCPServer.h Socket.h
+Socket.o: Socket.cpp Socket.h
+TCPServer.o: TCPServer.cpp TCPServer.h Socket.h
